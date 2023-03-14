@@ -1,0 +1,402 @@
+/* Genericos */
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}.wrap-container{
+    margin: 0px;
+
+}
+
+.cont-title{
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.title-h2 h2{
+    font-weight: 300;
+}
+.subtitle{
+    color:#888;     
+}
+
+
+/* Header y navegacion */
+.header-container{
+    padding: 20px 35px 20px 35px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 14%);
+    
+}
+
+/* Menu superior Iquierdo */
+.nav-left{
+    display: inline-block;
+
+}
+.logo{
+    margin-top: 5px;
+
+}
+.top-nav-left {
+    display: flex;
+}
+
+.top-nav-left ul{
+    list-style: none;
+}
+
+.top-nav-left li{
+    display: inline;
+}
+
+.top-nav-left a{
+    text-decoration: none;
+}
+
+
+/* Menu superior Derecho */
+.top-nav-right ul{
+    list-style: none;
+    color: blueviolet;
+}
+
+.top-nav-right li{
+    display: inline-block;
+}
+.top-nav-right a{
+    text-decoration: none;
+}
+
+/* contenido principal y general del sitio */
+.main-content{
+    background-color: #f7f7f7;
+}
+
+/* Slider */
+.slide{
+    background-repeat: no-repeat;
+
+}
+
+.slide img{
+    width: 99%;
+}
+main .p{
+    text-align: center;
+}
+
+
+
+/* seccion de categorias populares */
+
+.cont-card{
+    display: grid;
+    grid-template-columns:23% 23% 23%;
+    justify-content: center;   
+}
+
+.popular-card {     
+    background-color: #fff; 
+    padding-top: 30px ;
+    padding-bottom: 30px; 
+    margin: 10px 10px 10px 10px; 
+}
+
+.popular-card-icon{
+    text-align: center;
+    margin: 5px; 
+    background-color: #fff;  
+}
+
+.popular-card-title{
+    font-weight: 100;
+    align-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 6px;
+}
+
+/* Lista de lugares destacados */
+.cont-all-reservation{
+    margin-top: 30px;
+    background-color: hsla(0, 0%, 100%, 0.957);
+    padding-bottom: 30px;
+}
+
+.all-reservation{
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+}
+
+.cont-location{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns:  23% 23% 23% 23%;
+    justify-content: space-evenly;
+}
+
+/* tarjetas de locales o servicios */
+.cont-card-local{
+    margin-top: 10px;
+    margin-bottom: 15px;    
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card-local {
+    background-color: #ffffff;
+    margin-left: 0px;
+    margin-right: 0px;   
+    border-radius: 8px 8px 0px 0px;
+}
+
+/* pruebas de imagenes como fondo */
+.card-img-background{
+    background-image: url("/Assets/img/location/img03.jpg");
+    display: block;
+    border-radius: 7px 7px 0px 0px;
+    background-repeat: no-repeat;
+    width: 255px;
+    height: 150px;
+}
+
+.card-local img{    
+    display: block;
+    border-radius: 7px 7px 0px 0px;       
+    width: 99%;
+}
+
+.item-header span{
+    font-size: 22px;    
+    color: darkviolet; 
+    background-color: rgba(255,255,255,.8);
+    padding: 0px 20px 15px 20px;
+    margin-top: 50px;
+
+}
+
+
+
+.item-header-content{
+    padding: 10px 20px 0px 20px;
+    
+}
+
+.item-header-content h3 {
+margin-bottom: 6px;
+}
+
+.item-header-content a{
+    text-decoration: none;
+    font-weight: 500;
+    color: navy;    
+}
+
+.item-address{
+    color: #aca9a9;
+    font-style: normal;    
+    font-size: 14px;
+    font-weight: 200;    
+}
+
+
+
+.item-content{
+    display: block;
+    padding: 5px 20px 0px 20px ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.item-category span{
+    color: #aca9a9;
+}
+
+.item-content-category{
+    color: #3b4249;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.item-content ul{
+    padding-left: 0px;
+    color:#aca9a9;
+    list-style: none;
+}
+
+
+.item-description li{
+    list-style: none;
+    display: contents;
+    margin-left: 0px;
+
+}
+
+.item-description{
+    margin-bottom: 5px;
+}
+
+/* Icono externo de fontAwesom */
+.item-description .fa:before {
+    content: "\f2c5","\f2c5","\f21d","\f1bb";
+    color: #3b4249;
+}
+
+
+.item-footer{
+    margin-left: 10px;
+    text-align: end;
+    padding-right: 8px; 
+}
+
+.item-footer ul{
+    padding-left: 0px;
+    list-style: none;
+    color:goldenrod;
+    display: inline-flex;    
+
+}
+.item-footer li{
+    margin-left: 2px;  
+}
+
+.item-footer span{
+    color: #aca9a9;
+} 
+
+/* seccion informacion adicional */
+.wrap-information{
+    background-color: #f7f7f7;
+}
+
+.cont-all-information{    
+    justify-content: center;     
+}
+
+.all-card-information{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 25% 25%  25% ; 
+    justify-content: space-evenly;    
+}
+
+.cont-information{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    align-items: center;
+    text-align: center;
+}
+
+.info-icon{
+        
+    background-color: rgba(159, 25, 249, 0.07);
+    border-radius: 60%; 
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 30px;  
+}
+
+.info-icon img{    
+    margin: 20px;    
+}
+
+.info-card-title{
+    font-weight: 100;
+    align-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.info-card-description {
+    padding: 10px;
+    color: #777777;
+    font-weight: 100;
+}
+
+
+/* Seccion de Footer */
+.footer-info{    
+    background-color: #edecec;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #707070;    
+    padding-top: 25px;
+    padding-bottom: 0px;
+
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 35% ;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.footer-cont {
+    display:flex
+}
+.footer-img-det{
+    margin-top: 18px;
+    margin-right: 7px;
+}
+
+.footer-cont h4{
+    color: #000;    
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 200; 
+    margin-bottom: 10px;
+}
+
+.footer-social-img{
+    margin-top: 0.3rem;
+}
+
+.footer-menu h4{
+    color: #000;
+    font-size: 21px;
+    font-weight: 200; 
+    margin-bottom: 10px;
+}
+
+.footer-menu ul{
+    list-style: none;    
+}
+
+.footer-menu a{
+    text-decoration: none;
+    margin: 0px -40px;
+    color: blueviolet;
+}
+
+.footer-contact h4{
+    color: #000;
+    font-size: 21px;
+    font-weight: 200;  
+    margin-bottom: 10px; 
+}
+
+.footer-contact ul{
+    list-style: none;  
+    margin-left: -40px;  
+}
+
+.footer-contact a{
+    text-decoration: none;
+    margin: 0px -40px;
+    color: blueviolet;
+}
+
+.footer-copyright p{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    background-color: #dedbdb; 
+    text-align: center;   
+    
+}
