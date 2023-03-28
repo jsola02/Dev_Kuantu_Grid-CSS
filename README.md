@@ -1,2 +1,2 @@
-# EbisuChain
- Template para proyecto Ebisu
+# kban Proyect
+ Template para proyecto kban, plataforma para compras a traves de cripto
