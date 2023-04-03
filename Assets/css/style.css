@@ -138,70 +138,83 @@ main .p{
     justify-content: space-evenly;
 }
 
-/* tarjetas de locales o servicios */
-.cont-card-local{
+/* tarjetas DESTACADOS, locales o servicios */
+.cont-card-great{
     margin-top: 10px;
     margin-bottom: 15px;    
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-.card-local {
+/* tarjeta */ 
+.card-great {
     background-color: #ffffff;
     margin-left: 0px;
     margin-right: 0px;   
     border-radius: 8px 8px 0px 0px;
+
 }
 
-/* pruebas de imagenes como fondo */
-.card-img-background{
-    background-image: url("/Assets/img/location/img03.jpg");
-    display: block;
-    border-radius: 7px 7px 0px 0px;
-    background-repeat: no-repeat;
-    width: 255px;
-    height: 150px;
+.item-header{
+    background-color: #fdfdfd70;    
+    position: relative;
 }
 
-.card-local img{    
-    display: block;
+.item-media{
+    position: relative;
+}
+
+
+.item-header img{    
     border-radius: 7px 7px 0px 0px;       
-    width: 99%;
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    object-fit: cover;   
 }
 
-.item-header span{
-    font-size: 22px;    
-    color: darkviolet; 
-    background-color: rgba(255,255,255,.8);
-    padding: 0px 20px 15px 20px;
-    margin-top: 50px;
+.item-price{
+    position: absolute;
+    font-size: 1.6rem;    
+    right: 10px;
+    color: rgb(249, 247, 249); 
+    background-color: rgba(0, 0, 0, 0.065);
+    padding: 5px 10px;    
+    bottom: 10px;
+    left: 10px;
+
+
+}
+
+.item-price :nth-child(2){   
+    color: rgb(255, 255, 255);
+    position: relative;  
+    top: -4px
 
 }
 
 
 
-.item-header-content{
-    padding: 10px 20px 0px 20px;
-    
+.item-header-info{
+    padding: 0px 20px 0px 20px;
+    padding-bottom: 20px;
+
 }
 
-.item-header-content h3 {
-margin-bottom: 6px;
+.item-header h3 {
+    margin-bottom: 6px;
 }
 
-.item-header-content a{
+.item-header-info a{
     text-decoration: none;
     font-weight: 500;
     color: navy;    
 }
 
 .item-address{
-    color: #aca9a9;
+    color: #949ca5;
     font-style: normal;    
-    font-size: 14px;
-    font-weight: 200;    
+    font-size: 14px;       
 }
-
-
 
 .item-content{
     display: block;
@@ -229,14 +242,76 @@ margin-bottom: 6px;
 
 .item-description li{
     list-style: none;
-    display: contents;
+    display:contents;
     margin-left: 0px;
+    font-size: 14px;
+    color: #3b4249
 
 }
 
 .item-description{
     margin-bottom: 5px;
 }
+
+
+/* tarjetas lugares DESTACADOS categoria general*/
+.cont-great-category{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns:  23% 23% 23% 23%;
+    justify-content: space-evenly;
+    
+}
+
+.cont-card-cat{
+    margin-top: 10px;
+    margin-bottom: 15px; 
+    overflow: hidden; 
+    border-radius: 9px 9px 9px 9px;  
+    background-color: #fff;
+      
+}
+
+/* tarjeta */ 
+.card-great-cat {   
+    margin-left: 0px;
+    margin-right: 0px;  
+
+}
+
+.item-header-cat{      
+    position: relative;
+    
+}
+
+.item-media-cat{
+    position: relative;
+
+}
+
+.item-header-cat img{    
+    border-radius: 10px 10px 10px 10px;       
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    object-fit: cover;   
+}
+
+.item-price-cat{
+    position: absolute;
+    font-size: 1.6rem;       
+    color: rgb(249, 247, 249); 
+    background-color: rgba(0, 0, 0, 0.065);
+    padding: 5px 10px;    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    
+}
+
+
+
 
 /* Icono externo de fontAwesom */
 .item-description .fa:before {
@@ -254,7 +329,7 @@ margin-bottom: 6px;
 .item-footer ul{
     padding-left: 0px;
     list-style: none;
-    color:goldenrod;
+    color: #f8b42b;
     display: inline-flex;    
 
 }
