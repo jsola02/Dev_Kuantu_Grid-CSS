@@ -4,7 +4,6 @@ body{
 
 }.wrap-container{
     margin: 0px;
-
 }
 
 .cont-title{
@@ -16,6 +15,7 @@ body{
 .title-h2 h2{
     font-weight: 300;
 }
+
 .subtitle{
     color:#888;     
 }
@@ -27,15 +27,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 12px 0 rgb(0 0 0 / 14%);
-    
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 14%);    
 }
 
 /* Menu superior Iquierdo */
 .nav-left{
     display: inline-block;
-
 }
+
 .logo{
     margin-top: 5px;
 
@@ -76,22 +75,86 @@ body{
 }
 
 /* Slider */
-.slide{
-    background-repeat: no-repeat;
 
+.cont-search {
+    background-image: url('/Assets/MapBox.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 450px;
 }
 
-.slide img{
-    width: 99%;
+.bar-search{
+    background-color: #fdfdfd70;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 148px;
 }
+
+.search-pref{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-pref.place{
+    flex-grow: 1;
+    max-width: 210px;
+} 
+
+.search-pref.category{
+    flex-grow: 1;
+    max-width: 230px;
+    display: flex;
+    align-items: center;
+}
+
+.form-search{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;       
+    border-radius: 148px;
+    padding-top: 5px;
+    padding-right: 40px ;
+    padding-bottom: 5px;
+}
+
+.form-search input[type="text"]{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 30px;   
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.form-search button{
+    background-color: hsl(271.52deg 47.83% 40.59%);
+    color: #f7f7f7;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 8px 20px;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 main .p{
     text-align: center;
 }
 
 
-
 /* seccion de categorias populares */
-
 .cont-card{
     display: grid;
     grid-template-columns:23% 23% 23%;
@@ -99,16 +162,41 @@ main .p{
 }
 
 .popular-card {     
-    background-color: #fff; 
+    background-color: #ffffff;
     padding-top: 30px ;
     padding-bottom: 30px; 
-    margin: 10px 10px 10px 10px; 
+    padding-left: 30px;
+    margin: 0px 10px 10px 0px; 
+    display: flex;    
+    align-items: center;    
+    border-radius: 5px;      
 }
 
-.popular-card-icon{
-    text-align: center;
+.popular-card:hover  {     
+    background-color: hsl(271.52deg 47.83% 40.59%);
+    color: #ffffff;
+    padding-top: 26px ;
+    padding-bottom: 30px; 
+    margin: 0px 10px 10px 0px;  
+    transition: all 0.6s ease-out;  
+}
+
+.popular-card-icon{    
     margin: 5px; 
-    background-color: #fff;  
+    background-color: transparent;  
+    height: 70px;
+    width: 70px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.popular-card-icon img{
+    text-align: center;
+    margin: 5px;    
+    height: 70px;
+    width: 70px;   
+    
 }
 
 .popular-card-title{
@@ -116,7 +204,8 @@ main .p{
     align-content: center;
     text-align: center;
     font-size: 1.1rem;
-    margin-top: 6px;
+    margin-top: 25px;
+    margin-left: 2.3rem;
 }
 
 /* Lista de lugares destacados */
@@ -124,11 +213,14 @@ main .p{
     margin-top: 30px;
     background-color: hsla(0, 0%, 100%, 0.957);
     padding-bottom: 30px;
+    display: grid;
+    justify-items: center;
+    align-items: center;    
 }
 
 .all-reservation{
-    margin-left: 4.5rem;
-    margin-right: 4.5rem;
+    justify-items: center;
+    align-items: center;   
 }
 
 .cont-location{
@@ -151,7 +243,6 @@ main .p{
     margin-left: 0px;
     margin-right: 0px;   
     border-radius: 8px 8px 0px 0px;
-
 }
 
 .item-header{
@@ -162,7 +253,6 @@ main .p{
 .item-media{
     position: relative;
 }
-
 
 .item-header img{    
     border-radius: 7px 7px 0px 0px;       
@@ -181,23 +271,17 @@ main .p{
     padding: 5px 10px;    
     bottom: 10px;
     left: 10px;
-
-
 }
 
 .item-price :nth-child(2){   
     color: rgb(255, 255, 255);
     position: relative;  
     top: -4px
-
 }
-
-
 
 .item-header-info{
     padding: 0px 20px 0px 20px;
     padding-bottom: 20px;
-
 }
 
 .item-header h3 {
@@ -239,14 +323,12 @@ main .p{
     list-style: none;
 }
 
-
 .item-description li{
     list-style: none;
     display:contents;
     margin-left: 0px;
     font-size: 14px;
     color: #3b4249
-
 }
 
 .item-description{
@@ -254,45 +336,99 @@ main .p{
 }
 
 
-/* tarjetas lugares DESTACADOS categoria general*/
-.cont-great-category{
-    margin-top: 2.5rem;
+/* tarjetas Cuidades DESTACADOS, categoria general*/
+.cont-city-category{
+    margin-top: 2.5rem;    
     display: grid;
-    grid-template-columns:  23% 23% 23% 23%;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 1fr);   
+    gap: 5px 15px;
+    list-style: none;
+    height: 550px;     
+    width: 1024px;
+}
+
+.item-media-cat img{ 
+    width: 100%; 
+    overflow: hidden;
+    object-fit: cover; 
+}
+
+.cont-city-category :nth-child(1){
+    grid-area: 1/1 / 3/3;
+    height: 100%;
+    
     
 }
 
-.cont-card-cat{
-    margin-top: 10px;
-    margin-bottom: 15px; 
+.cont-city-category :nth-child(2){    
+    grid-column: 3/4 ;   
+    grid-row: 1/2;
+}
+
+.cont-city-category :nth-child(3){    
+    grid-column: 4/5;  
+    grid-row: 1/2; 
+}
+
+.cont-city-category :nth-child(4){    
+    grid-column: 3/4;  
+    grid-row: 2/3; 
+}
+
+.cont-city-category :nth-child(5){
+grid-column: 4/5;  
+grid-row: 2/3; 
+}
+
+
+.cont-city-category :nth-child(6){    
+grid-column: ;  
+}
+
+.cont-city-category :nth-child(7){    
+grid-column: ;  
+}
+
+.cont-city-category :nth-child(8){   
+grid-column: 3/5;  
+grid-row: 3/4; 
+overflow: hidden;
+}
+
+
+.cont-card-cat{   
+    /* margin-top: 10px;
+    margin-bottom: 15px;  */
     overflow: hidden; 
     border-radius: 9px 9px 9px 9px;  
-    background-color: #fff;
-      
+    background-color: #fff; 
+         
 }
+
+.cont-card-cat:hover{   
+    filter: brightness(75%);; 
+         
+}
+
 
 /* tarjeta */ 
 .card-great-cat {   
     margin-left: 0px;
     margin-right: 0px;  
-
 }
 
 .item-header-cat{      
-    position: relative;
-    
+    position: relative;    
 }
 
 .item-media-cat{
     position: relative;
-
 }
 
 .item-header-cat img{    
     border-radius: 10px 10px 10px 10px;       
     width: 100%;
-    height: 180px;
+    /* height: 180px; */
     overflow: hidden;
     object-fit: cover;   
 }
@@ -310,6 +446,21 @@ main .p{
     
 }
 
+
+/* seccion de partners */
+.cont-title-partners{
+    text-align: left;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.title-h2 h2{
+    font-weight: 300;
+}
+.subtitle{
+    color:#888;     
+}
 
 
 

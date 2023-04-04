@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Assets/css/style.css">
     <script src="https://kit.fontawesome.com/8beb39c842.js" crossorigin="anonymous"></script>
-    <title>Ebisu Reservas con tokens Online</title>
+    <title>kBan Reserva facil con Cripto</title>
 </head>
 <body class="wrap-container">    
     <header class="header-container">
@@ -35,37 +35,59 @@
 
 
     </header>
-    <main class="main-content">
-        <section class="slide">
-            <img src="/Assets/img/map-placeholder.jpg" alt="" srcset="">
+    <main class="main-content">    
+        <section class="cont-search">
+            <div class="bar-search">
+                <form class="form-search">
+                    <div class="search-pref place">
+                        <input type="text" placeholder="Donde Quieres ir?"> 
+                    </div>
+                    <div class="search-pref city">
+                        <input type="text" placeholder="Ciudad"> 
+                    </div>                  
+                    <div class="search-pref category">
+                        <input type="text" placeholder="Todas las Categorias">
+                    </div>                    
+                    <div class="search-pref">
+                        <button type="submit">Buscar</button>
+                    </div>  
+                    
+                </form>
+            </div>
         </section>
+
+
+
+    <!--     Categorias Populares -->
         <section class="cat-popular">
             <div class="cat-popular-items">
                 <div class="cont-title">
                     <div class="title-h2 decoration-line-title">
-                        <h2>Categorias Populares</h2>
+                        <h2>Servicios Disponibles</h2>
                     </div>
                 </div>
                 <div class="cont-card">
                     <div class="popular-card">
                         <div class="popular-card-icon">
-                            <img src="/Assets/img/icons/hotel.png" alt="">
+                            <img class="" src="/Assets/img/icons/hotel.png" alt="">
+                        
                         </div>
+
                         <h3 class="popular-card-title">
                             Hoteles & Hospedaje
                         </h3>
                     </div>
                     <div class="popular-card">
                         <div class="popular-card-icon">
-                            <img src="/Assets/img/icons/iftar.png" alt="">
+                            <img src="/Assets/img/icons/fast-food.png" alt="">
                         </div>
                         <h3 class="popular-card-title">
-                            Comida & Bebidas
+                            Restaurant & Bebidas
                         </h3>
                     </div>
                     <div class="popular-card">
                         <div class="popular-card-icon">
-                            <img src="/Assets/img/icons/microphone.png" alt="">
+                            <img src="/Assets/img/icons/party.png" alt="">
                         </div>
                         <h3 class="popular-card-title">
                             Eventos
@@ -74,6 +96,8 @@
                 </div>
             </div>
         </section>
+
+    <!--     Arriendo            -->   
         <section class="cont-all-reservation">
             <div class="all-reservation">
                 <div class="cont-title">
@@ -384,7 +408,8 @@
                 </div>
             </div>
         </section>
-
+        
+    <!--     Informacion General Cripto -->
         <section class="wrap-information">
             <div class="cont-all-information">
                 <div class="cont-title">
@@ -437,70 +462,108 @@
             </div>
         </section>
 
-        <section class="cont-all-reservation">
-            <div class="all-reservation">
-                <div class="cont-title">
-                    <div class="title-h2">
-                        <h2>Destinos de destacados</h2>
-                        <span class="subtitle">Explora nuestra selección de los mejores lugares de Chile</span>
-                    </div>
-                </div>
-                <div class="cont-great-category">
-                    <div class="cont-card-cat">
-                        <div class="card-great-cat">                            
-                            <div class="item-header-cat">
-                                <div class="item-media-cat">
-                                    <img src="/Assets/img/category/la-serena.jpg" alt="">                                
-                                    <span class="item-price-cat">La Serena</span>
-                                </div>                             
-                            </div>                           
-                        </div>
-                    </div>
-                    <div class="cont-card-cat">
-                        <div class="card-great-cat">                            
-                            <div class="item-header-cat">
-                                <div class="item-media-cat">
-                                    <img src="/Assets/img/category/Rapa-Nui.jpg" alt="">                                
-                                    <span class="item-price-cat">Rapa Nui</span>
-                                </div>                             
-                            </div>                           
-                        </div>
-                    </div>
-                    <div class="cont-card-cat">
-                        <div class="card-great-cat">                            
-                            <div class="item-header-cat">
-                                <div class="item-media-cat">
-                                    <img src="/Assets/img/category/volcan-osorno.jpg" alt="">                                
-                                    <span class="item-price-cat">Osorno</span>
-                                </div>                             
-                            </div>                           
-                        </div>
-                    </div>
-                    <div class="cont-card-cat">
-                        <div class="card-great-cat">                            
-                            <div class="item-header-cat">
-                                <div class="item-media-cat">
-                                    <img src="/Assets/img/category/puerto-montt.jpg" alt="">                                
-                                    <span class="item-price-cat">Puerto Montt</span>
-                                </div>                             
-                            </div>                           
-                        </div>
-                    </div>
-                
-                   
-
-
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <section class="wrap-information">
-        <div class="cont-all-information">
+    <!--     Destacados por Ciudad -->
+    <section class="cont-all-reservation">
+        <div class="all-reservation">
             <div class="cont-title">
                 <div class="title-h2">
-                    <h2>Planifica tus Mejores Vacaciones</h2>
+                    <h2>Destinos de Destacados</h2>
+                    <span class="subtitle">Explora nuestra selección de los mejores lugares de Chile</span>
+                </div>
+            </div>
+            <div class="cont-city-category">
+                <div class="cont-card-cat">
+                    <div class="card-great-cat">                            
+                        <div class="item-header-cat ">
+                            <div class="item-media-cat ">
+                                <img class="img-cat-city" src="/Assets/img/category/la-serena.jpg" alt="">                                
+                                <span class="item-price-cat">La Serena</span>
+                            </div>                             
+                        </div>                           
+                    </div>
+                </div>
+                <div class="cont-card-cat">
+                    <div class="card-great-cat">                            
+                        <div class="item-header-cat">
+                            <div class="item-media-cat">
+                                <img src="/Assets/img/category/Rapa-Nui.jpg" alt="">                                
+                                <span class="item-price-cat">Rapa Nui</span>
+                            </div>                             
+                        </div>                           
+                    </div>
+                </div>
+                <div class="cont-card-cat">
+                    <div class="card-great-cat">                            
+                        <div class="item-header-cat">
+                            <div class="item-media-cat">
+                                <img src="/Assets/img/category/volcan-osorno.jpg" alt="">                                
+                                <span class="item-price-cat">Osorno</span>
+                            </div>                             
+                        </div>                           
+                    </div>
+                </div>
+                <div class="cont-card-cat">
+                    <div class="card-great-cat">                            
+                        <div class="item-header-cat">
+                            <div class="item-media-cat">
+                                <img src="/Assets/img/category/puerto-montt.jpg" alt="">                                
+                                <span class="item-price-cat">Puerto Montt</span>
+                            </div>                             
+                        </div>                           
+                    </div>
+                </div>
+                <div class="cont-card-cat">
+                    <div class="card-great-cat">                            
+                        <div class="item-header-cat">
+                            <div class="item-media-cat">
+                                <img src="/Assets/img/category/Chungara.webp" alt="">                                
+                                <span class="item-price-cat">Chungara</span>
+                            </div>                             
+                        </div>                           
+                    </div>
+                </div>
+                <div class="cont-card-cat">
+                    <div class="card-great-cat">                            
+                        <div class="item-header-cat">
+                            <div class="item-media-cat">
+                                <img src="/Assets/img/category/San-Pedro-Atacama.webp" alt="">                                
+                                <span class="item-price-cat">San Pedro de Atacama</span>
+                            </div>                             
+                        </div>                           
+                    </div>
+                </div>
+                <div class="cont-card-cat">
+                    <div class="card-great-cat">                            
+                        <div class="item-header-cat">
+                            <div class="item-media-cat">
+                                <img src="/Assets/img/category/Valle-Nevado.webp" alt="">                                
+                                <span class="item-price-cat">Valle Nevado</span>
+                            </div>                             
+                        </div>                           
+                    </div>
+                </div>
+                <div class="cont-card-cat">
+                    <div class="card-great-cat">                            
+                        <div class="item-header-cat">
+                            <div class="item-media-cat">
+                                <img src="/Assets/img/category/Torres-del-paine.webp" alt="">                                
+                                <span class="item-price-cat">Torres del Paine</span>
+                            </div>                             
+                        </div>                           
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--    lista de Partners         -->
+    <section class="wrap-information">
+        <div class="cont-all-information">
+            <div class="cont-title-partners">
+                <div class="title-h2">
+                    <h2>Nuestros Partners</h2>
                     <span class="subtitle">Consejos a nuestros socios y amigos. ¡Pagar con Cripto es posible!</span>
                 </div>
             </div>
@@ -543,10 +606,15 @@
                     <p class="info-card-description">
                         Realiza us reservaciones y compras directamente con cripto activos, facil y seguro.                        </p>
                 </div>
+                
             </div>
             
         </div>
     </section>
+
+    </main>
+
+    
     <footer class="footer-info">
             <div class="footer-grid">
                 <div class="footer-business">
