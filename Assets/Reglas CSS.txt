@@ -1,0 +1,3 @@
+#5f2a93;
+
+primary violet #6a3699;  
