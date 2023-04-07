@@ -10,8 +10,8 @@ contenedor completo / contenido
     padding-bottom contenido    24px
     
     distancia entre contenido, texto
-    padding-top contenido       32px
-    padding-bottom contenido    32px
+    padding-top: 32px;          contenido       32px
+    padding-bottom: 32px;      contenido    32px
     
 
 
