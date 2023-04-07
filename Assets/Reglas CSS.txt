@@ -6,14 +6,13 @@ textos descriptivos     #777777;
 
 
 contenedor completo / contenido
-    padding-top contenido     48px (doble en su defecto)
-    padding-bottom contenido    24px
+    padding-top:48px;  contenido     48px (doble en su defecto)
+    padding-bottom:24px;  contenido    24px
     
     distancia entre contenido, texto
     padding-top: 32px;          contenido       32px
     padding-bottom: 32px;      contenido    32px
     
-
 
 
 botones
@@ -32,3 +31,10 @@ botones
 
 
 linea de decoracion     1px solid #dddcdc; 
+
+card
+    background-color: #ffffff;
+    padding-top: 30px ;
+    padding-bottom: 30px; 
+    padding-left: 30px;
+    margin: 0px 10px 10px 0px; 
