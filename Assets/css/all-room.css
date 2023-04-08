@@ -1,0 +1,35 @@
+.main-content-allrooms{
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1366px; 
+    }
+
+.content-all-room{
+    display: grid;  
+    
+    
+}
+
+
+.cont-search-rooms{
+    background-color: #f7f7f7;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 1.5rem ;
+    
+}
+
+.bar-search-rooms{
+    background-color: #fdfdfd70;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 148px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08),0 4px 12px rgba(0,0,0,0.05); 
+}
