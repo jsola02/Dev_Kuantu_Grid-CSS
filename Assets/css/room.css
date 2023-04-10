@@ -272,7 +272,7 @@ padding-bottom: 24px;
 .cont-map-room{
     padding-top: 16px;          
     padding-bottom: 32px;    
-    width: 1290px;    
+    width: 1224px;    
     height: 520px;  
     object-fit: cover;
     overflow: hidden;
@@ -284,14 +284,62 @@ padding-bottom: 24px;
 .content-room-social{
     grid-column: 1/4;
     grid-row: 7/8;
-    margin-left: 2rem;
-    display: none;    
+    margin-left: 2rem;     
+    margin-bottom: 6rem;
 }
 
 .cont-section-social{
     padding-top: 48px;
     padding-bottom: 24px;    
-    border-bottom: 1px solid #dddcdc;
+    border-bottom: 1px solid #dddcdc;  
+}
+
+.social-comment{
+    display: flex;        
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.profile-thumbnail {
+    width: 75px;
+    height: 75px;
+    overflow: auto;
+    flex-basis: 8%
+}
+
+.profile-thumbnail img{    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-data{
+    width: 85%;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+
+.profile-data h4{
+    margin: 0px;
+}
+
+.profile-data .comment-data{
+    font-size: 12px;
+}
+
+.pop-all-comment{
+    margin-top: 2rem ;
+}
+.pop-all-comment a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #6a3699;
+    padding: 13px 23px;
+
+
 }
 
 

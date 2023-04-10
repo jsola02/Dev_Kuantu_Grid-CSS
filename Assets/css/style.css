@@ -29,6 +29,14 @@ body{
     font-weight: 400;
 }
 
+.title-h4{
+    font-weight: bolder;
+    font-size: 16px;
+
+
+}
+
+
 
 .bar-inf-title .subtitle {    
     font-weight: 400; 
@@ -145,8 +153,7 @@ body{
     max-width: 1024px;
     margin: 0 auto;       
     border-radius: 148px;    
-    padding-right: 40px ;
-    
+    padding-right: 40px ;    
 }
 
 .form-search input[type="text"]{
@@ -163,19 +170,14 @@ body{
 .form-searitem-titlech button{
     background-color: hsl(271.52deg 47.83% 40.59%);
     color: #f7f7f7;
-    border-radius: 50%;
-    /* font-size: 16px; */
+    border-radius: 50%;    
     padding: 20px 20px; 
     border: none;
-    margin: 10px auto
-    
+    margin: 10px auto    
 }
 
 .form-search i {    
-    color: #f7f7f7;    
-    /* padding-right: 5px ; */
-    
-   
+    color: #f7f7f7;   
 }
 
 
@@ -217,16 +219,14 @@ main .p{
     height: 70px;
     width: 70px;
     justify-items: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .popular-card-icon img{
     text-align: center;
     margin: 5px;    
     height: 70px;
-    width: 70px;   
-    
+    width: 70px; 
 }
 
 .popular-card-title{
@@ -274,21 +274,15 @@ main .p{
     background-color: #ffffff;
     margin-left: 0px;
     margin-right: 0px;   
-    
-    
 }
 
 .item-header{
     background-color: #fdfdfd70;    
     position: relative;
-    
-
 }
 
 .item-media{
     position: relative;
-    
-    
 }
 
 .item-header img{    
@@ -563,7 +557,7 @@ overflow: hidden;
 }
 
 .item-footer span{
-    color: #aca9a9;
+    color: #494949;
 } 
 
 /* seccion informacion adicional */
