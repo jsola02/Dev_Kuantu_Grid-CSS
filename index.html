@@ -16,34 +16,39 @@
     <title>kBan Reserva facil con Cripto</title>
 </head>
 <body class="wrap-container">    
-    <header class="header-container">
-        <div class="top-nav-left">
-            <div class="logo">
-                <img src="/Assets/img/logoipsum-249.svg" alt="">
+    <div class="main-allcontent">
+        <!-- header / menu -->
+        <header class="cont-header-container">
+            <div class="top-nav-left">
+                <div class="logo">
+                    <img src="/Assets/img/logoipsum-249.svg" alt="">
+                </div>
+                <div class="nav-left">
+                    <ul>
+                        <li><a href="/index.html">Home </a></li>      
+                        <li><a href="/room.html">| Hoteles & Apartamentos </a></li>
+                        <li><a href="/all-room.html">| All Rooms </a></li>   
+                        <li><a href=""> | Eventos</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="nav-left">
-                <ul>
-                    <li><a href="/index.html">Home </a></li>      
-                    <li><a href="/room.html">| Hoteles & Apartamentos </a></li>
-                    <li><a href="/all-room.html">| All Rooms </a></li>   
-                    <li><a href=""> | Eventos</a></li>
-                </ul>
+            <div class="top-nav-right">
+                <div class="nav-right"> 
+                    <ul>
+                        <li><a href="">Contacto </a></li>      
+                        <li><a href="">| Mi Cuenta </a></li>
+                        
+                    </ul>
+    
+                </div>
             </div>
-        </div>
-        <div class="top-nav-right">
-            <div class="nav-right"> 
-                <ul>
-                    <li><a href="">Contacto </a></li>      
-                    <li><a href="">| Mi Cuenta </a></li>
-                    
-                </ul>
-
+            <div id="toogle-menu" class="toogle-menu">
+                <img src="/Assets/img/Sys/menu.png" alt="" sizes="" srcset="">
             </div>
-        </div>
-
-
-    </header>
-    <main class="main-content">    
+    
+    
+        </header>
+        <!-- slider y buscador -->
         <section class="cont-search">
             <div class="bar-search">
                 <form class="form-search">
@@ -63,16 +68,12 @@
                 </form>
             </div>
         </section>
-
-
-
-    <!--     Categorias Populares -->
-        <section class="cat-popular">
+        <!-- Categorias Populares -->
+        <section class="cont-cat-popular">
             <div class="cat-popular-items">
-                <div class="cont-title">
-                    <div class="">
-                        <h2 class="title-h2">Servicios Disponibles</h2>
-                    </div>
+                <div class="cont-title">                    
+                    <h2 class="title-h2">Servicios Disponibles</h2>
+                    
                 </div>
                 <div class="cont-card">
                     <div class="popular-card">
@@ -101,9 +102,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-    <!--     Arriendo            -->   
+        </section>      
+        <!-- Lista de lugares destacados          -->   
         <section class="cont-all-reservation">
             <div class="all-reservation">
                 <div class="cont-title">
@@ -261,7 +261,6 @@
 
                         </div>
                     </div>
-
                     <div class="cont-card-great">
                         <div class="card-great">                            
                             <div class="item-header">
@@ -410,16 +409,14 @@
 
                         </div>
                     </div>
-
                 </div>
                 <div class="btn-all-location">
                     <a class="" href="/all-room.html"> Ver Todos</a>
                 </div>
             </div>
         </section>
-        
-    <!--     Informacion General Cripto -->
-        <section class="wrap-information">
+        <!-- Consejos General Cripto -->
+        <section class="cont-advice-information">
             <div class="cont-all-information">
                 <div class="cont-title">
                     <div class="bar-inf-title">
@@ -470,212 +467,207 @@
                 
             </div>
         </section>
-
-    <!--     Destacados por Ciudad -->
-    <section class="cont-all-reservation">
-        <div class="all-reservation">
-            <div class="cont-title">
-                <div class="bar-inf-title">
-                    <h2 class="title-h2">Destinos destacados</h2>
-                    <span class="subtitle">Explora nuestra selección de los mejores lugares de Chile</span>
+        <!--  Ciudades Destacadas -->
+        <section class="cont-feature-city">
+            <div class="all-feature-city">
+                <div class="cont-title">
+                    <div class="bar-inf-title">
+                        <h2 class="title-h2">Destinos destacados</h2>
+                        <span class="subtitle">Explora nuestra selección de los mejores lugares de Chile</span>
+                    </div>
+                </div>
+                <div class="cont-city-category">
+                    <div class="cont-card-cat">
+                        <div class="card-great-cat">                            
+                            <div class="item-header-cat ">
+                                <div class="item-media-cat ">
+                                    <img class="img-cat-city" src="/Assets/img/category/la-serena.jpg" alt="">                                
+                                    <span class="item-price-cat">La Serena</span>
+                                </div>                             
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="cont-card-cat">
+                        <div class="card-great-cat">                            
+                            <div class="item-header-cat">
+                                <div class="item-media-cat">
+                                    <img src="/Assets/img/category/Rapa-Nui.jpg" alt="">                                
+                                    <span class="item-price-cat">Rapa Nui</span>
+                                </div>                             
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="cont-card-cat">
+                        <div class="card-great-cat">                            
+                            <div class="item-header-cat">
+                                <div class="item-media-cat">
+                                    <img src="/Assets/img/category/volcan-osorno.jpg" alt="">                                
+                                    <span class="item-price-cat">Osorno</span>
+                                </div>                             
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="cont-card-cat">
+                        <div class="card-great-cat">                            
+                            <div class="item-header-cat">
+                                <div class="item-media-cat">
+                                    <img src="/Assets/img/category/puerto-montt.jpg" alt="">                                
+                                    <span class="item-price-cat">Puerto Montt</span>
+                                </div>                             
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="cont-card-cat">
+                        <div class="card-great-cat">                            
+                            <div class="item-header-cat">
+                                <div class="item-media-cat">
+                                    <img src="/Assets/img/category/Chungara.webp" alt="">                                
+                                    <span class="item-price-cat">Chungara</span>
+                                </div>                             
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="cont-card-cat">
+                        <div class="card-great-cat">                            
+                            <div class="item-header-cat">
+                                <div class="item-media-cat">
+                                    <img src="/Assets/img/category/San-Pedro-Atacama.webp" alt="">                                
+                                    <span class="item-price-cat">San Pedro de Atacama</span>
+                                </div>                             
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="cont-card-cat">
+                        <div class="card-great-cat">                            
+                            <div class="item-header-cat">
+                                <div class="item-media-cat">
+                                    <img src="/Assets/img/category/Valle-Nevado.webp" alt="">                                
+                                    <span class="item-price-cat">Valle Nevado</span>
+                                </div>                             
+                            </div>                           
+                        </div>
+                    </div>
+                    <div class="cont-card-cat">
+                        <div class="card-great-cat">                            
+                            <div class="item-header-cat">
+                                <div class="item-media-cat">
+                                    <img src="/Assets/img/category/Torres-del-paine.webp" alt="">                                
+                                    <span class="item-price-cat">Torres del Paine</span>
+                                </div>                             
+                            </div>                           
+                        </div>
+                    </div>
+    
+    
                 </div>
             </div>
-            <div class="cont-city-category">
-                <div class="cont-card-cat">
-                    <div class="card-great-cat">                            
-                        <div class="item-header-cat ">
-                            <div class="item-media-cat ">
-                                <img class="img-cat-city" src="/Assets/img/category/la-serena.jpg" alt="">                                
-                                <span class="item-price-cat">La Serena</span>
-                            </div>                             
-                        </div>                           
+        </section>
+        <!--  Seccion de Partners -->
+        <section class="cont-partners-information">
+            <div class="cont-all-information">
+                <div class="cont-title-partners">
+                    <div class="bar-inf-title">
+                        <h2 class="title-h2">Nuestros Partners</h2>
+                        <span class="subtitle">Solo trabajamos con las mejores empresas del mundo.</span>
                     </div>
                 </div>
-                <div class="cont-card-cat">
-                    <div class="card-great-cat">                            
-                        <div class="item-header-cat">
-                            <div class="item-media-cat">
-                                <img src="/Assets/img/category/Rapa-Nui.jpg" alt="">                                
-                                <span class="item-price-cat">Rapa Nui</span>
-                            </div>                             
-                        </div>                           
-                    </div>
-                </div>
-                <div class="cont-card-cat">
-                    <div class="card-great-cat">                            
-                        <div class="item-header-cat">
-                            <div class="item-media-cat">
-                                <img src="/Assets/img/category/volcan-osorno.jpg" alt="">                                
-                                <span class="item-price-cat">Osorno</span>
-                            </div>                             
-                        </div>                           
-                    </div>
-                </div>
-                <div class="cont-card-cat">
-                    <div class="card-great-cat">                            
-                        <div class="item-header-cat">
-                            <div class="item-media-cat">
-                                <img src="/Assets/img/category/puerto-montt.jpg" alt="">                                
-                                <span class="item-price-cat">Puerto Montt</span>
-                            </div>                             
-                        </div>                           
-                    </div>
-                </div>
-                <div class="cont-card-cat">
-                    <div class="card-great-cat">                            
-                        <div class="item-header-cat">
-                            <div class="item-media-cat">
-                                <img src="/Assets/img/category/Chungara.webp" alt="">                                
-                                <span class="item-price-cat">Chungara</span>
-                            </div>                             
-                        </div>                           
-                    </div>
-                </div>
-                <div class="cont-card-cat">
-                    <div class="card-great-cat">                            
-                        <div class="item-header-cat">
-                            <div class="item-media-cat">
-                                <img src="/Assets/img/category/San-Pedro-Atacama.webp" alt="">                                
-                                <span class="item-price-cat">San Pedro de Atacama</span>
-                            </div>                             
-                        </div>                           
-                    </div>
-                </div>
-                <div class="cont-card-cat">
-                    <div class="card-great-cat">                            
-                        <div class="item-header-cat">
-                            <div class="item-media-cat">
-                                <img src="/Assets/img/category/Valle-Nevado.webp" alt="">                                
-                                <span class="item-price-cat">Valle Nevado</span>
-                            </div>                             
-                        </div>                           
-                    </div>
-                </div>
-                <div class="cont-card-cat">
-                    <div class="card-great-cat">                            
-                        <div class="item-header-cat">
-                            <div class="item-media-cat">
-                                <img src="/Assets/img/category/Torres-del-paine.webp" alt="">                                
-                                <span class="item-price-cat">Torres del Paine</span>
-                            </div>                             
-                        </div>                           
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!--    lista de Partners         -->
-    <section class="wrap-information">
-        <div class="cont-all-information">
-            <div class="cont-title-partners">
-                <div class="bar-inf-title">
-                    <h2 class="title-h2">Nuestros Partners</h2>
-                    <span class="subtitle">Solo trabajamos con las mejores empresas del mundo.</span>
-                </div>
-            </div>
-            <div class="all-card-information">
-                <div class="slider">
-                    <div class="slide-track">
-                        <div class="slide">
-                            <img src="/Assets/img/slide/1.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/2.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/3.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/4.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/5.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/6.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/7.png" alt="">
-                        </div>
-            
-                        <div class="slide">
-                            <img src="/Assets/img/slide/" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/2.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/3.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/4.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/5.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/6.png" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="/Assets/img/slide/7.png" alt="">
+                <div class="all-card-information">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="/Assets/img/slide/1.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/2.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/3.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/4.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/5.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/6.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/7.png" alt="">
+                            </div>
+                
+                            <div class="slide">
+                                <img src="/Assets/img/slide/" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/2.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/3.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/4.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/5.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/6.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="/Assets/img/slide/7.png" alt="">
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 
             </div>
-            
-        </div>
-    </section>
-
-    </main>
-
-    
-    <footer class="footer-info">
-            <div class="footer-grid">
-                <div class="footer-business">
-                    <div class="footer-cont">                        
-                        <img class="footer-img-det"  src="/Assets/img/logoipsum-249.svg" alt="">
-                        <h4 class="footer-text-logo">Kban</h4>                        
+        </section>        
+        <footer class="cont-footer-info">
+                <div class="footer-grid">
+                    <div class="footer-business">
+                        <div class="footer-cont">                        
+                            <img class="footer-img-det"  src="/Assets/img/logoipsum-249.svg" alt="">
+                            <h4 class="footer-text-logo">Kban</h4>                        
+                        </div>
+                        <div class="footer-description-business">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, veritatis.</p>
+                        </div>                  
                     </div>
-                    <div class="footer-description-business">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, veritatis.</p>
-                    </div>                  
+                    <div class="footer-menu">
+                        <h4>Links de Utilidad</h4>
+                        <ul>
+                            <li><a href="#">Mi Cuenta</a></li>
+                            <li><a href="#">Privacidad</a></li>
+                            <li><a href="#">Datos de la Empresa</a></li>
+                            <li><a href="#">Terminos & Condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contactenos</h4>
+                        <ul>
+                            <li>Telefono: (+56 9) 4325752</li>
+                            <li><address>Algun Lugar #241. La Serena, Chile.</address></li>
+                            <li>E-mail: Contacto@Kban.com</li>
+                            
+                        </ul>
+                        <!-- <div class="footer-social-img">
+                            <a href="#">                       
+                                <img src="https://via.placeholder.com/30x30/7f6087/ffffff" alt="">
+                            </a>                       
+                            <a href="#">
+                                <img src="https://via.placeholder.com/30x30/7f6087/ffffff " alt="">
+                            </a>
+                        </div> -->
+                    </div>
+                    </div>
+                <div class="footer-copyright">
+                    <p>© Todos los derechos reservados 2023. Kban Spa</p>
                 </div>
-                <div class="footer-menu">
-                    <h4>Links de Utilidad</h4>
-                    <ul>
-                        <li><a href="#">Mi Cuenta</a></li>
-                        <li><a href="#">Privacidad</a></li>
-                        <li><a href="#">Datos de la Empresa</a></li>
-                        <li><a href="#">Terminos & Condiciones</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contactenos</h4>
-                    <ul>
-                        <li>Telefono: (+56 9) 4325752</li>
-                        <li><address>Algun Lugar #241. La Serena, Chile.</address></li>
-                        <li>E-mail: Contacto@Kban.com</li>
-                        
-                    </ul>
-                    <!-- <div class="footer-social-img">
-                        <a href="#">                       
-                            <img src="https://via.placeholder.com/30x30/7f6087/ffffff" alt="">
-                        </a>                       
-                        <a href="#">
-                            <img src="https://via.placeholder.com/30x30/7f6087/ffffff " alt="">
-                        </a>
-                    </div> -->
-                </div>
-                </div>
-            <div class="footer-copyright">
-                <p>© Todos los derechos reservados 2023. Kban Spa</p>
-            </div>
-    </footer>
-
+        </footer>
+    </div>
+    
 </body>
     
 

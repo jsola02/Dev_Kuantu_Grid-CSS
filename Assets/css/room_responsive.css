@@ -1,0 +1,420 @@
+/* contenido principal y general para pagina room */
+/* contenido principal y general del sitio */
+.main-content-room{ 
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1366px; 
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 2% auto 5% 5% 5% auto);
+}
+
+.content-room{
+    display: grid;
+    
+}
+
+.content-room-title{
+    grid-column: 1/4;
+    grid-row: 1/2;  
+    margin-left: 2rem ;
+    margin-right: 2rem;  
+}
+
+.cont-section-title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.section-title-review{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-title-review a{
+    text-decoration: none;   
+    
+}
+
+
+.section-title-review ul{
+    list-style: none;   
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.section-title-review li,span,address{
+    font-weight: 500;
+    display: inline;
+    
+}
+.section-title-review i{
+    margin-right: 3px;    
+}
+
+.section-title-review address{
+    
+    font-style: normal;
+    display: inline;
+}
+
+
+/* seccion interna contedora de las imagenes */
+.content-room-media{ 
+    grid-column: 1/4;
+    grid-row: 2/4; 
+    padding-top: 32px;    
+    margin-left: 2rem ;
+    margin-right: 2rem;  
+}
+
+.cont-section-media{  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 3px 5px ;      
+    height: 330px; 
+    object-fit: cover;
+    overflow: hidden;     
+    /* width: 1024px;   */
+} 
+
+.cont-section-media img{
+    width: 100%; 
+    height: 100%;  
+}
+
+.cont-section-media :nth-child(1){    
+    grid-area: 1/1 / 3/3;
+    border-radius: 15px 0px 0px 15px;         
+    
+}
+
+.cont-section-media :nth-child(2){
+    grid-column: 3/4;
+    grid-row: 1/2;    
+    width: 100%; 
+    height: 165px;  
+
+}
+
+.cont-section-media :nth-child(3){
+    grid-column: 4/5;   
+    grid-row: 1/2;  
+    border-radius: 0px 15px 0px 0px;
+    height: 165px;
+}
+
+.cont-section-media :nth-child(4){
+    grid-column: 3/4;  
+    grid-row: 2/3; 
+    height: 165px; 
+}
+
+.cont-section-media :nth-child(5){
+    grid-column: 4/5;  
+    grid-row: 2/3;     
+    border-radius: 0px 0px 20px 0px;
+    height: 165px;  
+}
+
+
+/* Detalles de Room */
+.content-room-details{
+grid-column: 1/3;
+grid-row: 4/5;
+margin-left: 2rem; 
+padding-top: 48px;  
+padding-bottom: 24px; 
+
+}
+
+.cont-section-details{
+    display: grid;
+    grid-template-columns: 95% ;
+    
+}
+
+.details-flex-sumary{    
+    padding-top: 48px;
+    padding-bottom: 24px;    
+    border-bottom: 1px solid #dddcdc;
+
+}
+.section-details-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.detail-ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;   
+}
+
+.detail-ul li{
+    padding-left: 15px;
+    color: #888;  
+}
+
+.detail-thumbnail{
+    width: 60px ;   
+    height: 60px;
+    position: relative;
+}
+
+.detail-thumbnail img {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%;
+}
+
+.details-description{
+    padding-top: 32px;
+    padding-bottom: 32px;    
+    border-bottom: 1px solid #dddcdc;
+}
+
+.details-description a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.details-offer ul{
+    list-style: none;
+    margin: 0px 0px 2rem 0px;
+    padding: 0;
+}
+
+.details-offer i{
+    margin-right: 16px;
+}
+
+.offer-pop a{
+    text-align: center;    
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 10px;    
+    border: 1px solid #6a3699;
+    padding: 13px 23px;
+}
+
+.content-offer-items{
+    border-bottom: 1px solid #dddcdc;
+    padding-top: 32px;        
+    padding-bottom: 32px;      
+    
+}
+
+.content-offer-media{
+    border-bottom: 1px solid #dddcdc;
+    padding-top: 32px;        
+    padding-bottom: 32px;
+}
+
+.content-offer-image{    
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    
+    gap: 0px 15px    ;
+}
+
+.content-offer-image img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    width: 280px;
+    height: 220px;
+}
+
+
+/* Terminos y condiciones, lo que debes saber */
+.content-room-conditions{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    margin-left: 2rem;
+    
+} 
+
+.cont-section-conditions{        
+    border-bottom: 1px solid #dddcdc;
+}
+
+.cont-section-conditions ul{
+    list-style: none;
+    padding-left: 0px
+}
+
+.cont-section-conditions li{
+    padding-bottom: 16px;
+}
+
+
+/* contenido del mapa de ubicacion */
+.content-room-map{
+    grid-column:1/5 ;
+    grid-row: 6/7;
+    margin-left: 2rem;
+    padding-top:48px;   
+    padding-bottom:48px  
+}
+
+.cont-map-room{
+    padding-top: 16px;          
+    padding-bottom: 32px;    
+    width: 970px;    
+    height: 520px;  
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+
+    /* contenido social, Interno o externo */
+.content-room-social{
+    grid-column: 1/4;
+    grid-row: 7/8;
+    margin-left: 2rem;     
+    margin-bottom: 6rem;
+}
+
+.cont-section-social{
+    padding-top: 48px;
+    padding-bottom: 24px;    
+    border-bottom: 1px solid #dddcdc;  
+}
+
+.social-comment{
+    display: flex;        
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.profile-thumbnail {
+    width: 75px;
+    height: 75px;
+    overflow: auto;
+    flex-basis: 8%
+}
+
+.profile-thumbnail img{    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-data{
+    width: 85%;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+
+.profile-data h4{
+    margin: 0px;
+}
+
+.profile-data .comment-data{
+    font-size: 12px;
+}
+
+.pop-all-comment{
+    margin-top: 2rem ;
+}
+.pop-all-comment a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #6a3699;
+    padding: 13px 23px;
+
+
+}
+
+
+/* contenido del FORMULARIO de arriendo */
+.content-room-booking{
+    grid-column: 3/4 ;
+    grid-row: 4/5;
+}
+
+.con-section-booking{
+    margin: 2rem;
+    padding: 1rem;  
+}
+
+.card-booking{
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 3px;
+}
+
+.card-booking{
+    padding-bottom:24px; 
+}
+
+.card-booking .span-price-booking{
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.span-price-booking{
+    font-weight: 500;
+}
+
+
+.body-card-booking{    
+    margin-top: 24px;
+}
+
+.card-booking ::placeholder{    
+    color: rgb(150, 150, 150);
+}
+
+.card-booking [type="date"]{    
+    color: rgb(176, 176, 176);
+}
+
+.group-label-booking{
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.group-label-booking label,input{
+    margin-top: 0.8rem;
+}
+
+.group-label-booking input{
+    margin-top: 0.8rem;
+    border: none;
+    margin-left: 3px;
+}
+
+
+.btn-booking{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 50px;
+    color: #ffffff;  
+    background-color:#6a3699 ;
+    border: 1px solid #6a3699;    
+    font-size: 18px;       
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+    text-align: center;
+
+}
+

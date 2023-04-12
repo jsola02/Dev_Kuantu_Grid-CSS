@@ -2,7 +2,8 @@
 
 primary violet          #6a3699; 
 subtitle gris           #888;    
-textos descriptivos     #777777;   
+textos descriptivos     #777777;  
+footer color            #ebebeb; 
 
 
 contenedor completo / contenido

@@ -2,13 +2,15 @@
 
 /* color primary:  #6a3699  Violet*/
 
-
 body{
     font-family: 'Quicksand', sans-serif;
     background-color: #f7f7f7;
     
 }.wrap-container{
     margin: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 0px;
 }
 
 .cont-title{
@@ -32,33 +34,40 @@ body{
 .title-h4{
     font-weight: bolder;
     font-size: 16px;
-
-
 }
-
-
 
 .bar-inf-title .subtitle {    
     font-weight: 400; 
     color: hsl(0, 0%, 0%)  
 }
 
+.main-allcontent{
+    display: grid;
+    grid-template-areas: 
+    "cont-header-container         cont-header-container         cont-header-container         cont-header-container"
+    "cont-search                   cont-search                   cont-search                   cont-search"
+    "cont-cat-popular              cont-cat-popular              cont-cat-popular              cont-cat-popular"
+    "cont-all-reservation          cont-all-reservation          cont-all-reservation          cont-all-reservation"
+    "cont-advice-information       cont-advice-information       cont-advice-information       cont-advice-information"
+    "cont-feature-city             cont-feature-city             cont-feature-city             cont-feature-city"
+    "cont-partners-information     cont-partners-information     cont-partners-information     cont-partners-information" 
+    "cont-footer-info              cont-footer-info              cont-footer-info              cont-footer-info"
+    ;
+}
+
 
 /* Header y navegacion */
-.header-container{
-    padding: 20px 35px 20px 35px;   
+.cont-header-container{
+    padding: 5px 35px 5px 35px; 
+    grid-area: cont-header-container;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 12px 0 rgb(0 0 0 / 14%);   
-    
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 14%);
     position:sticky;
     z-index: 10;
     top: 0;
     background-color: #f7f7f7;
-
-
-
 }
 
 /* Menu superior Iquierdo */
@@ -100,14 +109,18 @@ body{
     text-decoration: none;
 }
 
+.toogle-menu{
+    display: none;
+}
+
 /* contenido principal y general del sitio */
 .main-content{
     background-color: #f7f7f7;
 }
 
-/* Slider */
-
+/* Slider y busqueda*/
 .cont-search {
+    grid-area: cont-search;
     background-image: url('/Assets/MapBox.png');
     background-size: cover;
     display: flex;
@@ -150,7 +163,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 1024px;
+    /* max-width: 1024px; */
     margin: 0 auto;       
     border-radius: 148px;    
     padding-right: 40px ;    
@@ -181,12 +194,11 @@ body{
 }
 
 
-main .p{
-    text-align: center;
+/* seccion de categorias populares */
+.cont-cat-popular{
+    grid-area: cont-cat-popular ;
 }
 
-
-/* seccion de categorias populares */
 .cont-card{
     display: grid;
     grid-template-columns:23% 23% 23%;
@@ -196,12 +208,11 @@ main .p{
 .popular-card {     
     background-color: #ffffff;
     padding-top: 30px ;
-    padding-bottom: 30px; 
-    padding-left: 30px;
+    padding-bottom: 30px;     
     margin: 0px 10px 10px 0px; 
     display: flex;    
     align-items: center;    
-    border-radius: 5px;      
+         
 }
 
 .popular-card:hover  {     
@@ -230,16 +241,14 @@ main .p{
 }
 
 .popular-card-title{
-    font-weight: 100;
-    align-content: center;
-    text-align: center;
-    font-size: 1.1rem;
-    margin-top: 25px;
-    margin-left: 2.3rem;
+    font-weight: 100; 
+    margin-left: 0.7rem;
 }
+
 
 /* Lista de lugares destacados */
 .cont-all-reservation{
+    grid-area: cont-all-reservation;
     margin-top: 30px;
     background-color: hsla(0, 0%, 100%, 0.957);
     padding-bottom: 5rem;
@@ -255,7 +264,7 @@ main .p{
 
 .cont-location{
     margin-top: 2.5rem;
-    display: grid;
+    display: grid;    
     grid-template-columns:  23% 23% 23% 23%;
     justify-content: space-evenly;
 }
@@ -311,8 +320,7 @@ main .p{
 }
 
 .item-header-info{
-    padding: 0px 20px 0px 20px;
-    /* padding-bottom: 20px; */
+    padding: 0px 20px 0px 20px;    
 }
 
 .item-header h3 {
@@ -333,9 +341,7 @@ main .p{
 
 .item-content{
     display: block;
-    padding: 0px 20px 0px 20px ;
-    /* margin-top: 0px;
-    margin-bottom: 0px; */
+    padding: 0px 20px 0px 20px ;    
 }
 
 .item-category span{
@@ -403,19 +409,37 @@ main .p{
     min-height: 35px;
     text-align: center;
     padding-top: 1.3rem;
-    padding-bottom: 0.7rem;
-    
+    padding-bottom: 0.7rem;    
 }
 
-/* tarjetas Cuidades DESTACADOS, categoria general*/
+
+/* seccion de Consejos generales & Cripto */
+.cont-advice-information{
+    grid-area: cont-advice-information;    
+}
+
+
+/* tarjetas Ciudades DESTACADOS, categoria general*/
+.cont-feature-city{
+    grid-area: cont-feature-city;
+    background-color: hsla(0, 0%, 100%, 0.957)
+}
+
+.all-feature-city{
+    display: grid;
+    justify-content:space-around;
+    align-items: center; 
+    margin-bottom: 3rem;
+}
+
 .cont-city-category{
     margin-top: 2.5rem;    
     display: grid;
     grid-template-columns: repeat(4, 1fr);   
-    gap: 5px 15px;
+    gap: 2px 5px;
     list-style: none;
-    height: 550px;     
-    width: 1024px;
+    height: 290px;     
+    /* width: 1024px; */
 }
 
 .item-media-cat img{ 
@@ -465,8 +489,6 @@ overflow: hidden;
 }
 
 .cont-card-cat{   
-    /* margin-top: 10px;
-    margin-bottom: 15px;  */
     overflow: hidden; 
     border-radius: 9px 9px 9px 9px;  
     background-color: #fff;          
@@ -494,7 +516,6 @@ overflow: hidden;
 .item-header-cat img{    
     border-radius: 10px 10px 10px 10px;       
     width: 100%;
-    /* height: 180px; */
     overflow: hidden;
     object-fit: cover;   
 }
@@ -529,13 +550,11 @@ overflow: hidden;
 }
 
 
-
 /* Icono externo de fontAwesom */
 .item-description .fa:before {
     content: "\f2c5","\f2c5","\f21d","\f1bb";
     color: #3b4249;
 }
-
 
 .item-footer{
     margin-left: 10px;
@@ -543,7 +562,6 @@ overflow: hidden;
     padding-right: 8px; 
     margin-top: -10px;
 }
-
 
 .item-footer ul{
     padding-left: 0px;
@@ -560,13 +578,15 @@ overflow: hidden;
     color: #494949;
 } 
 
+
 /* seccion informacion adicional */
-.wrap-information{
+.cont-advice-information{
     background-color: #f7f7f7;
     margin-top: 2rem;
 }
 
-.cont-all-information{    
+.cont-all-information{   
+    display: grid; 
     justify-content: center;     
 }
 
@@ -614,10 +634,19 @@ overflow: hidden;
     font-weight: 100;
 }
 
+/*  Seccion de Partners */
+.cont-partners-information{
+    grid-area: cont-partners-information;
+}
+
 
 /* Seccion de Footer */
+.cont-footer-info{
+    grid-area: cont-footer-info;
+    background-color: #ebebeb;
+}
+
 .footer-info{    
-    background-color: #edecec;
     color: #707070;        
     padding-top: 25px;
     padding-bottom: 0px;
@@ -690,6 +719,175 @@ overflow: hidden;
     padding-bottom: 20px;
     margin-bottom: 0px;
     background-color: #dedbdb; 
-    text-align: center;   
+    text-align: center;      
+}
+
+
+@media screen and (max-width: 320px){
+    .main-allcontent{
+        display: grid;
+        grid-template-areas: 
+        "cont-header-container      cont-header-container       "
+        "cont-search                cont-search                    "
+        "cont-cat-popular           cont-cat-popular   "
+        "cont-all-reservation       cont-all-reservation    "
+        "cont-advice-information    cont-advice-information    "
+        "cont-feature-city          cont-feature-city   "
+        "cont-partners-information  cont-partners-information   " 
+        "cont-footer-info           cont-footer-info   "
+        ;   
+        box-sizing: border-box;
+        margin: 0px;
+    } 
+    body{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cont-header-container{
+        padding: 5px;          
+    }
+
+    .toogle-menu{
+        width: 20px;
+        object-fit: cover;
+        margin-right: 15px;
+        padding-top: 10px;
+        cursor: pointer;
+        display: block;
+
+    }
+
+    .toogle-menu img{
+        width: 100%;
+    }
+
+    .nav-left{
+        display: none;
+    }
+
+    .top-nav-right{
+        display: none;
+    }
+
+    .cont-search{
+        margin: 0px;
+        display: none; 
+    }
+
+    .cont-all-reservation{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px
+    }
+    .cat-popular-items{
+        margin-left: 5px ;
+        margin-right: 5px;
+    }
+
+    .title-h2{
+        text-align: center;
+    }
+
+    .cont-card{
+        margin: 10px;
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .cont-location{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
+    }
+
+    .all-card-information{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+        justify-items: center;
+        margin-left: 10px ;
+        margin-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .cont-information{            
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .cont-feature-city{
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     
+    .cont-city-category{
+        margin-top: 2.5rem;    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);   
+        gap: 5px 5px;
+        list-style: none;
+        height: 550px;     
+        /* width: 1024px; */
+    }
+    .cont-city-category :nth-child(1){
+        grid-area: 1/1 / 3/3;
+        height: 100%;
+    }
+    
+    .cont-city-category :nth-child(2){    
+        grid-column: 3/5 ;   
+        grid-row: 1/2;
+    }
+    
+    .cont-city-category :nth-child(3){    
+        grid-column: 3/5;  
+        grid-row: 2/3; 
+    }
+    
+    .cont-city-category :nth-child(4){    
+        grid-column: 1/3;  
+        grid-row: 3/4; 
+    }
+    
+    .cont-city-category :nth-child(5){
+        grid-column: 3/4;  
+        grid-row: 3/4; 
+    }    
+    
+    .cont-city-category :nth-child(6){    
+    grid-column: 3/5 ; 
+    grid-row: 3/4; 
+    }
+    
+    .cont-city-category :nth-child(7){    
+    grid-column: 1/5;  
+    display: 4/5;
+    }
+    
+    .cont-city-category :nth-child(8){   
+    grid-column: 1/5;  
+    grid-row: 5/6; 
+    overflow: hidden;    
+    }
+
+    .cont-footer-info{
+        background-color: #ebebeb;
+    }
+    
+    .footer-menu{
+        grid-column: 1/-1;
+    }
+
+    .footer-business{
+        display: none;
+    }
+
+    .footer-contact{
+        display: none;
+    }
 }

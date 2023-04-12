@@ -36,68 +36,29 @@ body{
 
 }
 
+
+
 .bar-inf-title .subtitle {    
     font-weight: 400; 
     color: hsl(0, 0%, 0%)  
 }
 
 
-
-.main-allcontent{
-    display: grid;
-    grid-template-areas: 
-    "cont-header-container        "
-    "cont-search                   "
-    "cont-cat-popular             "
-    "cont-all-reservation           "
-    "cont-advice-information       "
-    "cont-feature-city             "
-    "cont-partners-information     " 
-    "cont-footer-info              "
-    ;
-
-}
-
-
-
-@media screen and (min-width: 1024px){
-    .main-allcontent{
-        display: grid;
-        grid-template-areas: 
-        "cont-header-container         cont-header-container         cont-header-container         cont-header-container"
-        "cont-search                   cont-search                   cont-search                   cont-search"
-        "cont-cat-popular              cont-cat-popular              cont-cat-popular              cont-cat-popular"
-        "cont-all-reservation          cont-all-reservation          cont-all-reservation          cont-all-reservation"
-        "cont-advice-information       cont-advice-information       cont-advice-information       cont-advice-information"
-        "cont-feature-city             cont-feature-city             cont-feature-city             cont-feature-city"
-        "cont-partners-information     cont-partners-information     cont-partners-information     cont-partners-information" 
-        "cont-footer-info              cont-footer-info              cont-footer-info              cont-footer-info"
-        ;
-
-}
-
-    }
-
-
-
-
-
-    
-
-
-
 /* Header y navegacion */
-.cont-header-container{
-    padding: 20px 35px 20px 35px; 
-    grid-area: cont-header-container;
+.header-container{
+    padding: 20px 35px 20px 35px;   
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 0 12px 0 rgb(0 0 0 / 14%);
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 14%);   
+    
     position:sticky;
     z-index: 10;
     top: 0;
     background-color: #f7f7f7;
+
+
+
 }
 
 /* Menu superior Iquierdo */
@@ -144,10 +105,9 @@ body{
     background-color: #f7f7f7;
 }
 
-/* Slider y busqueda*/
+/* Slider */
 
 .cont-search {
-    grid-area: cont-search;
     background-image: url('/Assets/MapBox.png');
     background-size: cover;
     display: flex;
@@ -220,17 +180,13 @@ body{
     color: #f7f7f7;   
 }
 
-/* main .p{
+
+main .p{
     text-align: center;
 }
- */
 
 
 /* seccion de categorias populares */
-.cont-cat-popular{
-    grid-area: cont-cat-popular ;
-}
-
 .cont-card{
     display: grid;
     grid-template-columns:23% 23% 23%;
@@ -282,10 +238,8 @@ body{
     margin-left: 2.3rem;
 }
 
-
 /* Lista de lugares destacados */
 .cont-all-reservation{
-    grid-area: cont-all-reservation;
     margin-top: 30px;
     background-color: hsla(0, 0%, 100%, 0.957);
     padding-bottom: 5rem;
@@ -302,7 +256,6 @@ body{
 .cont-location{
     margin-top: 2.5rem;
     display: grid;
-    /* grid-template-columns: repeat(autofit,)minmax(300px,1fr); */
     grid-template-columns:  23% 23% 23% 23%;
     justify-content: space-evenly;
 }
@@ -380,7 +333,9 @@ body{
 
 .item-content{
     display: block;
-    padding: 0px 20px 0px 20px ;    
+    padding: 0px 20px 0px 20px ;
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
 }
 
 .item-category span{
@@ -452,25 +407,7 @@ body{
     
 }
 
-
-/* seccion de Consejos generales & Cripto */
-.cont-advice-information{
-    grid-area: cont-advice-information;
-    
-}
-
-
-/* tarjetas Ciudades DESTACADOS, categoria general*/
-.cont-feature-city{
-    grid-area: cont-feature-city;
-}
-
-.all-feature-city{
-    display: grid;
-    justify-content:space-around;
-    align-items: center; 
-}
-
+/* tarjetas Cuidades DESTACADOS, categoria general*/
 .cont-city-category{
     margin-top: 2.5rem;    
     display: grid;
@@ -623,9 +560,8 @@ overflow: hidden;
     color: #494949;
 } 
 
-
 /* seccion informacion adicional */
-.cont-advice-information{
+.wrap-information{
     background-color: #f7f7f7;
     margin-top: 2rem;
 }
@@ -678,18 +614,8 @@ overflow: hidden;
     font-weight: 100;
 }
 
-/*  Seccion de Partners */
-.cont-partners-information{
-    grid-area: cont-partners-information;
-}
-
 
 /* Seccion de Footer */
-.cont-footer-info{
-    grid-area: cont-footer-info;
-
-}
-
 .footer-info{    
     background-color: #edecec;
     color: #707070;        
