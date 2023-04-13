@@ -1,7 +1,5 @@
 /* Genericos */
-
 /* color primary:  #6a3699  Violet*/
-
 body{
     font-family: 'Quicksand', sans-serif;
     background-color: #f7f7f7;
@@ -473,15 +471,13 @@ body{
     grid-row: 2/3; 
 }
 
-
-.cont-city-category :nth-child(6){    
+/* .cont-city-category :nth-child(6){    
 grid-column: ;  
 }
-
 .cont-city-category :nth-child(7){    
 grid-column: ;  
 }
-
+ */
 .cont-city-category :nth-child(8){   
 grid-column: 3/5;  
 grid-row: 3/4; 
