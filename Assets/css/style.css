@@ -79,6 +79,7 @@ body{
 }
 .top-nav-left {
     display: flex;
+    align-items: center;
 }
 
 .top-nav-left ul{
@@ -209,8 +210,7 @@ body{
     padding-bottom: 30px;     
     margin: 0px 10px 10px 0px; 
     display: flex;    
-    align-items: center;    
-         
+    align-items: center; 
 }
 
 .popular-card:hover  {     

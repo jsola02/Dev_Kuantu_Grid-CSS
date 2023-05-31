@@ -1,0 +1,138 @@
+/* contenido principal y general para pagina login */
+/* contenido principal y general del sitio */
+
+.main-login{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cont-header-container  cont-header-container   cont-header-container"
+    "cont-content-login     cont-content-login      cont-content-login"
+    "cont-footer-info       cont-footer-info        cont-footer-info"
+    ;
+}
+
+.cont-content-login{ 
+    grid-area: cont-content-login;
+  
+   /*  margin-left: auto; 
+    margin-right: auto;    */ 
+    /* max-width: 1024px;   */   
+}
+
+/* .cont-content-login{
+    display: flex;
+    height: 100vh;
+} */
+
+.cont-left-login{ 
+    /* width: 60%; */ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 2% auto-fit);    
+} 
+
+.cont-left img{
+    width: 100%;     
+}
+
+.cont-image-login{
+    width:100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;   
+}
+
+.content-right-login{ 
+    /* justify-content: space-between;
+    width: 40%;
+    text-align: center;     
+    padding: 0 4%; 
+    
+    display: flex;
+    flex-direction: column;    */   
+}
+
+.title-h1-login{
+    font-family:  'Quicksand', sans-serif;
+    font-weight: 200;   
+    margin-bottom: 15px ;    
+    margin-top: 15vh;
+
+}
+
+.title-strong{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.log-cont-form{    
+    display: flex;
+    flex-direction: column;
+    padding: 0 15%;  
+}
+
+
+.log-cont-form input[type="email"]{    
+    margin-top: 0.2rem;
+    background: #f2f2f2f2;
+    height: 35px;
+    border:none;
+    border-radius: 5px;
+    outline: none;     
+    padding: 0 20px;
+}
+
+.log-cont-form input[type="password"]{
+    margin-top: 0.5rem;
+    background: #f2f2f2f2;
+    height: 35px;
+    border:none;
+    border-radius: 5px;
+    outline: none;   
+    padding: 0 20px;  
+    
+}
+
+.log-cont-form button{    
+    margin-top: 0.8rem;
+    width: 100%;
+    height: 35px;
+    color: #ffffff;
+    background-color: #6a3699;
+    border: 1px solid #6a3699;
+    font-size: 16px;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+    text-align: center;  
+}
+
+.text-newaccount-loggin{  
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.content-right-login ul>li{ 
+    
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 5px ;
+    
+}
+
+.content-right-login a{
+    text-decoration: none;
+}
+
+.social-login {
+    margin-bottom: 10vh;
+}
+
+.social-login ul>li>i{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+
+
