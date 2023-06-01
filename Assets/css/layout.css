@@ -1,0 +1,55 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f7f7f7;
+    
+}.wrap-container{
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+
+.main-login{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+
+}
+
+.item{
+    border: medium solid #787373;
+}
+
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+  }
+  
+  .submenu li {
+    margin-bottom: 10px;
+  }
+  
+  .submenu-parent:hover .submenu {
+    display: block;
+  }
+  
