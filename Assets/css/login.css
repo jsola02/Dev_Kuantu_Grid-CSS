@@ -67,6 +67,15 @@
     padding: 0 15%;  
 }
 
+.log-cont-form input[type="text"]{    
+    margin-top: 0.2rem;
+    background: #f2f2f2f2;
+    height: 35px;
+    border:none;
+    border-radius: 5px;
+    outline: none;     
+    padding: 0 20px;
+}
 
 .log-cont-form input[type="email"]{    
     margin-top: 0.2rem;
@@ -137,4 +146,15 @@
     padding-left: 1px;
 }
 
+
+.register-condition{
+    display: flex;   
+    
+    
+}
+
+.register-condition > label:nth-child(2) {
+    font-size: 10px;
+    padding-top: 2px;
+}
 

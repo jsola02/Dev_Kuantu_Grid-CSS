@@ -8,21 +8,23 @@
 }
 
 .cont-content-all-rooms{
-    grid-area: cont-content-all-rooms;
+    grid-area: cont-content-all-rooms;  
     margin-left: auto; 
     margin-right: auto;
-    max-width: 1024px;  
+    max-width: 1140px;
+   
     }
 
 .content-all-room{
-    
-   /*  grid-template-columns: repeat(4, 1fr);
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 200px 1fr);  
      */
     
 }
 
 .cont-search-rooms{
+    /* background-image: url('/Assets/img/category/Torres-del-paine.webp')  ; */
     background-color: #f7f7f7;
     background-size: cover;
     display: flex;
@@ -50,6 +52,16 @@
 
 }
 
+.cont-all-reservation{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+
+}
+
+
+
+
 
 @media screen and (max-width: 320px){
     .main-all-room{
@@ -59,10 +71,12 @@
         "cont-content-all-rooms  "
         "cont-footer-info       "
         ;
+
         box-sizing: border-box;
         margin: 0px;
-         
     }
+
+
     .cont-content-all-rooms{
         grid-area: cont-content-all-rooms;
         grid-column: 1/-1;

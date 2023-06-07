@@ -309,18 +309,23 @@ body{
 
 /* Lista de lugares destacados */
 .cont-all-reservation{
+    display: grid;
     grid-area: cont-all-reservation;
     margin-top: 30px;
-    background-color: hsla(0, 0%, 100%, 0.957);
-    padding-bottom: 5rem;
-    display: grid;
+    /* background-color: hsla(0, 0%, 100%, 0.957); */
+    padding-bottom: 5rem;    
     justify-items: center;
     align-items: center;    
 }
 
 .all-reservation{
+    display: grid;
     justify-items: center;
-    align-items: center;   
+    align-items: center; 
+     margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px; 
+
 }
 
 .cont-location{
@@ -491,6 +496,9 @@ body{
     justify-content:space-around;
     align-items: center; 
     margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
 }
 
 .cont-city-category{
@@ -860,6 +868,8 @@ overflow: hidden;
         display: grid;
         grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
         justify-items: center;
+       
+
     }
 
     .all-card-information{

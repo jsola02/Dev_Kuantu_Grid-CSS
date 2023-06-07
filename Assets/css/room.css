@@ -14,7 +14,7 @@
     grid-area: cont-content-room;
     margin-left: auto; 
     margin-right: auto;
-    max-width: 1024px;     
+    max-width: 1140px;     
 }
 
 .content-room{
@@ -227,10 +227,10 @@ padding-bottom: 24px;
 
 .content-offer-image{    
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: stretch;    
     gap: 0px 15px    ;
-    width: 150px;
+    /* width: 150px; */
     height: 150px;
 }
 
@@ -276,7 +276,7 @@ padding-bottom: 24px;
 .cont-map-room{
     padding-top: 16px;          
     padding-bottom: 32px;    
-    width: 970px;    
+    width: 1139px;    
     height: 520px;  
     object-fit: cover;
     overflow: hidden;

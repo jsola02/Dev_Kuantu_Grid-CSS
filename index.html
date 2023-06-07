@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Assets/css/style.css">
-    <link rel="stylesheet" href="/Assets/css/room.css">
+    <link rel="stylesheet" href="/Assets/css/style.css">    
     <link rel="stylesheet" href="/Assets/css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,36 +17,43 @@
 <body class="wrap-container">    
     <div class="main-allcontent">
         <!-- header / menu -->
-        <header class="cont-header-container">
-            <div class="top-nav-left">
-                <div class="logo">
-                    <img src="/Assets/img/logoipsum-249.svg" alt="">
-                </div>
-                <div class="nav-left">
-                    <ul>
-                        <li><a href="/index.html">Home </a></li>      
-                        <li><a href="/room.html">| Hoteles & Apartamentos </a></li>
-                        <li><a href="/all-room.html">| All Rooms </a></li>   
-                        <li><a href=""> | Eventos</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="top-nav-right">
-                <div class="nav-right"> 
-                    <ul>
-                        <li><a href="">Contacto </a></li>      
-                        <li><a href="">| Mi Cuenta </a></li>
-                        
-                    </ul>
-    
-                </div>
-            </div>
-            <div id="toogle-menu" class="toogle-menu">
-                <img src="/Assets/img/Sys/menu.png" alt="" sizes="" srcset="">
-            </div>
-    
-    
-        </header>
+        <header class="cont-header-container"> 
+            <!--  esto debe ir en un navbar al pasar a VUE  -->            
+                    <div class="top-nav-left">
+                        <div class="logo">
+                            <img src="/Assets/img/logoipsum-249.svg" alt="">
+                        </div>
+                        <div class="nav-left-menu">
+                            <ul class="menu">
+                                <li><a href="/index.html">Home</a></li>
+                                <li class="submenu-parent">
+                                    <a href="/room.html">Hoteles & Apartamentos</a>
+                                    <ul class="submenu">
+                                        <li><a href="/all-room.html">> Ver Todo</a></li>
+                                        <li><a href="/room.html">> Detalles Alojamiento</a></li>
+                                        <li><a href="#">> Otros</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="#">Eventos</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="top-nav-right">
+                        <div class="nav-right"> 
+                            <ul>
+                                <li><a href="/contact.html">Contacto </a></li> 
+                                <li><a href="/register.html">Registro</a></li>
+                                <li><a href="/login.html">Ingresar</a></li>
+                                <li><a href="/account.html"> Cuenta </a></li>
+                                
+                            </ul>    
+                        </div>
+                    </div>
+                    <div id="toogle-menu" class="toogle-menu">
+                        <img src="/Assets/img/Sys/menu.png" alt="" sizes="" srcset="">
+                    </div> 
+                
+            </header> 
         <!-- slider y buscador -->
         <section class="cont-search">
             <div class="bar-search">
