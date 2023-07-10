@@ -1,0 +1,165 @@
+/* contenido principal y general para pagina My-profile  */
+.main-profile{
+    display: grid;
+    grid-template-areas: 
+    "cont-header-container"
+    "cont-content-profile"
+    "cont-footer-info "
+    ;
+}
+
+.cont-content-profile{ 
+    grid-area: cont-content-profile;
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1440px;     
+}
+
+.content-profile-dashboard{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.0rem    
+}
+
+
+/* --- Columna  iquierda ----- */
+.profile-dashboard-left{
+    grid-column: 1/2;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px 15px rgb(165 169 174 / 0.04);
+    background-color:rgb(255, 255, 255);
+    padding: 1.0rem;
+}
+
+.cont-user-menu{
+    width: 100%;
+    padding-top: 28px;
+}
+
+.user-menu-header{    
+    display: flex;
+    flex-direction: column;
+}
+
+.user-menu-header img{    
+    border-radius: 50%;
+    margin: 0px auto;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #f6f4ff;
+    background-size: cover;
+    background-position: 50% 50%;
+    box-shadow: 0px 3px 23px #E3E6EC; 
+}
+
+.cont-user-menu h3{
+    size: 8px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+    font-weight: 700;
+    color: #383f5b;
+}
+
+.user-menu-cont{
+    padding-left: 0;
+}
+
+.user-menu-cont ul{
+    padding-left: 0;
+}
+
+.user-menu-cont ul li{
+    list-style: none;
+}
+
+.user-menu-cont ul li:hover{
+    color: #6a3699;   
+}
+
+.user-menu-cont ul li i{
+    margin-right: 0.2rem;
+    padding: 0.4rem 0rem;
+}
+
+.user-menu-cont ul li a{    
+    color: #8A8795;
+    text-decoration: none;
+    border-radius: 5px;    
+}
+
+.user-menu-cont ul li a:hover{
+    color:#6a3699;
+}
+
+
+/* --- Columna  centro ----- */
+.profile-dashboard-center{
+    grid-column: 2/6;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px 15px rgb(165 169 174 / 0.04);
+    background-color:rgb(255, 255, 255);
+    padding: 1.5rem;
+
+}
+
+.cont-user-main{ 
+
+
+}
+.cont-user-main h1{ 
+font-weight: 500;
+
+}
+
+.user-profile-data form{
+    margin-bottom: 1rem;
+}
+
+.user-profile-data h2{ 
+    font-size: 1.2rem;
+
+}
+
+/* --- Columna  Derecha ----- */
+.profile-dashboard-right{
+    grid-column: 6/7;
+    border-radius: 0.5rem;    
+    box-shadow: 0px 0px 15px 15px rgb(165 169 174 / 0.04);
+    background-color:rgb(255, 255, 255);
+    padding: 1.5rem;
+}
+
+
+.cont-user-image img{   
+    border-radius: 0.3rem; 
+    margin-bottom: 1rem; 
+}
+
+.bottom-user-update{
+    text-align: center;    
+    text-decoration: none;
+    font-size: 1rem;      
+    color: #ffffff;
+    background-color: #6a3699;
+    border: 1px solid #6a3699;
+    border-radius: 0.4rem;
+    width: 30%;
+    height: 3rem;
+}
+
+.bottom-user-update__image{
+    text-align: center;    
+    text-decoration: none;
+    font-size: 1rem;      
+    color: #ffffff;
+    background-color: #6a3699;
+    border: 1px solid #6a3699;
+    border-radius: 0.4rem;
+    width: 100%;
+    height: 3rem;
+    
+    
+
+
+}

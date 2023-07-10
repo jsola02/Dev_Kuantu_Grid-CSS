@@ -1,0 +1,50 @@
+#5f2a93;
+
+primary violet          #6a3699; 
+subtitle gris           #888;    
+textos descriptivos     #777777;   
+
+
+#Asignar el tipo de importancia de clase css
+contenedor completo / CONTAINER
+contenet / contenido de areas o secciones
+
+
+#Asignar nombre a una clase css
+nombre tipo contenedo (cont o contenet) -> content
+nombre descriptivo funcion              -> content-left
+nombre page                             -> content-left-login
+
+
+    padding-top:48px;  contenido     48px (doble en su defecto)
+    padding-bottom:24px;  contenido    24px
+    
+    distancia entre contenido, texto
+    padding-top: 32px;          contenido       32px
+    padding-bottom: 32px;      contenido    32px
+    
+
+
+botones
+    primary
+
+
+
+    secondary
+        text-align: center;    
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 10px;    
+        border: 1px solid #6a3699;
+        padding: 13px 23px;
+
+
+
+linea de decoracion     1px solid #dddcdc; 
+
+card
+    background-color: #ffffff;
+    padding-top: 30px ;
+    padding-bottom: 30px; 
+    padding-left: 30px;
+    margin: 0px 10px 10px 0px; 
