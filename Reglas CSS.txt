@@ -37,6 +37,7 @@ botones
 
     secondary - morado
         color: #e01c9c;
+        #c084fc
         
     Alternative secondary - Lima        
         color: #a3e635;
@@ -46,6 +47,12 @@ botones
 
     danger - Rose // ROJO
         color: #e11d48;
+
+    danger Opcion - Rose 400 // ROJO
+        color: #fb7185
+
+    pink 400
+    #f472b6    
 
     warning - Ambar
         color: #f59e0b;
