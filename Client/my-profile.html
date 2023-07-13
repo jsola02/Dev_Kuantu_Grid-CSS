@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./../Assets/css/style.css">
     <link rel="stylesheet" href="./../Assets/css/my-profile.css">
 
-    <title>My Profile</title>
+    <title>Mi Perfil</title>
 </head>
 <body>
     <div class="main-profile">
@@ -23,10 +23,17 @@
                             <h3 >Hola, Jhon Due</h3>
                         </div>  
                         <div class="user-menu-cont">
-                            <ul>
-                                <li><i class="las la-user"></i><a href="">Mi Perfil</a></li>
-                                <li><i class="lar la-heart"></i><a href="">Favoritos</a></li>
-                                <li><i class="las la-ticket-alt"></i><a href="">Reservaciones</a></li>
+                            <ul class="">
+                                <li class="menu-li-focus__developed"><i class="las la-user"></i>
+                                    <a  href="/Client/my-profile.html"
+                                        style="
+                                        color: #6a3699;
+                                        font-weight: 600;" 
+                                        >Mi Perfil
+                                    </a>
+                                </li>
+                                <li><i class="lar la-heart"></i><a href="/Client/my-favorite.html">Favoritos</a></li>
+                                <li><i class="las la-ticket-alt"></i><a href="/Client/my-reservations.html">Reservaciones</a></li>
                                 <li><i class="las la-tools"></i><a href="">Lorem</a></li>
                                 <li><i class="las la-sign-out-alt"></i><a href="">Cerrar Sesion</a></li>
                             </ul>
@@ -38,18 +45,23 @@
                 <div class="profile-dashboard-center">
                     <div class="cont-user-main">
                         <div class="user-main-title">
-                            <h1>Mi Perfil</h1>                
+                            <h1>Mi Perfil</h1>   
+                            <hr class="separation-content_myprofile">             
                         </div>
                         <div class="user-profile-data">
                             <h2>Informacion Personal</h2>
                             <div>
                                 <form action="">
-                                    <label for="">Nombres</label><input type="text" placeholder="Ej Jhon">
-                                    <label for="">Apellidos </label><input type="text" placeholder="Ej Due">
-                                    <label for="">Telefono</label><input type="text" placeholder="+56 9 54862458">
-                                    <label for="">Email</label><input type="email" placeholder="Algo@mimail.com">
-                                    <label for="">lorem </label><input type="text" placeholder="Ej Lorem">
-                                    
+                                    <div class="column-8-content__myprofile">
+                                        <label for="">Nombres</label>
+                                        <input type="text" placeholder="Ej Jhon Fortachon">
+                                        <label for="">Apellidos </label><input type="text" placeholder="Ej Duelho Largo">
+                                        
+                                        <label for="">Telefono</label><input type="text" placeholder="+56 9 54862458">
+                                        <label for="">Email</label><input type="email" placeholder="Algo@mimail.com">
+                                        
+                                        <label for="">Lorem </label><input type="text" placeholder="Ej Lorem">
+                                </div>
                                 </form>
                             </div>
                             

@@ -29,6 +29,7 @@
     box-shadow: 0px 0px 15px 15px rgb(165 169 174 / 0.04);
     background-color:rgb(255, 255, 255);
     padding: 1.0rem;
+    width: 180px;
 }
 
 .cont-user-menu{
@@ -73,6 +74,20 @@
     list-style: none;
 }
 
+/*################## solo para desarrollo############# */
+.menu-li-focus__developed {
+    border-radius: 3px;  
+    color: #6a3699;
+    text-decoration: none;    
+    background-color: #f4f2fb;
+    position: relative;
+    font-weight: 400;
+}
+
+
+
+/*################## solo para desarrollo############# */
+
 .user-menu-cont ul li:hover{
     color: #6a3699;   
 }
@@ -80,12 +95,17 @@
 .user-menu-cont ul li i{
     margin-right: 0.2rem;
     padding: 0.4rem 0rem;
+    margin-left: 0.5rem;
 }
 
-.user-menu-cont ul li a{    
+
+.user-menu-cont ul li a{   
+    font-weight: normal;
+    font-size: 0.8rem; 
     color: #8A8795;
     text-decoration: none;
-    border-radius: 5px;    
+    border-radius: 5px;  
+    margin-left: 1.4rem;  
 }
 
 .user-menu-cont ul li a:hover{
@@ -100,25 +120,70 @@
     box-shadow: 0px 0px 15px 15px rgb(165 169 174 / 0.04);
     background-color:rgb(255, 255, 255);
     padding: 1.5rem;
+    margin-bottom: 1rem;
 
 }
 
 .cont-user-main{ 
 
-
 }
-.cont-user-main h1{ 
+.cont-user-main h1{     
 font-weight: 500;
+}
 
+.separation-content_myprofile{
+    border: none; 
+        height: 0.5px; 
+        background-color: #beabe4;
+        margin: 5px 0; 
+    
 }
 
 .user-profile-data form{
     margin-bottom: 1rem;
 }
 
+.column-8-content__myprofile{
+    width: 80%;   
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+}
+
+
 .user-profile-data h2{ 
     font-size: 1.2rem;
 
+}
+
+.column-8-content__myprofile label{
+    color: #8A8795;
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.column-8-content__myprofile input{
+    margin-bottom: 2rem;
+    background: #FAFAFC;
+    color: #8A8F9A;
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid #f6f4ff;
+    border-left: 5px solid #cb9bf5;
+}
+
+.column-8-content__myprofile input:focus {   
+    border-left: 5px solid #6a3699;
+
+}
+
+.column-8-content__myprofile input:focus-visible {
+    outline: none;
+    border-left: 5px solid #e01c9c
 }
 
 /* --- Columna  Derecha ----- */
@@ -142,7 +207,8 @@ font-weight: 500;
     font-size: 1rem;      
     color: #ffffff;
     background-color: #6a3699;
-    border: 1px solid #6a3699;
+    border:
+    1px solid #6a3699;
     border-radius: 0.4rem;
     width: 30%;
     height: 3rem;

@@ -11,7 +11,7 @@ contenet / contenido de areas o secciones
 
 
 #Asignar nombre a una clase css
-nombre tipo contenedo (cont o contenet) -> content
+nombre tipo contenido o ubicacion (cont o content) -> content
 nombre descriptivo funcion              -> content-left
 nombre page                             -> content-left-login
 
@@ -26,17 +26,33 @@ nombre page                             -> content-left-login
 
 
 botones
-    primary
-
-
-
-    secondary
+    primary - Lima
+        color: #6a3699;
         text-align: center;    
         text-decoration: none;
         font-weight: 500;
-        border-radius: 10px;    
+        border-radsius: 10px;    
         border: 1px solid #6a3699;
         padding: 13px 23px;
+
+    secondary - morado
+        color: #e01c9c;
+        
+    Alternative secondary - Lima        
+        color: #a3e635;
+
+    succes - verde
+        color: #4ade80;
+
+    danger - Rose // ROJO
+        color: #e11d48;
+
+    warning - Ambar
+        color: #f59e0b;
+
+    info - Cyan
+        #22d3ee;
+
 
 
 
