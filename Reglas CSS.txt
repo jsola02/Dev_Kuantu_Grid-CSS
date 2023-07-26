@@ -4,7 +4,6 @@ primary violet          #6a3699;
 subtitle gris           #888;    
 textos descriptivos     #777777;   
 
-
 #Asignar el tipo de importancia de clase css
 contenedor completo / CONTAINER
 contenet / contenido de areas o secciones
@@ -23,7 +22,6 @@ nombre page                             -> content-left-login
     padding-top: 32px;          contenido       32px
     padding-bottom: 32px;      contenido    32px
     
-
 
 botones
     primary - Lima
@@ -59,8 +57,6 @@ botones
 
     info - Cyan
         #22d3ee;
-
-
 
 
 linea de decoracion     1px solid #dddcdc; 
